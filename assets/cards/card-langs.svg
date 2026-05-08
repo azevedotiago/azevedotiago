@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" font-family="'Space Grotesk', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FB8B27"></stop>
+      <stop offset="35%" stop-color="#FB5C2D"></stop>
+      <stop offset="65%" stop-color="#E94961"></stop>
+      <stop offset="100%" stop-color="#9D3F8E"></stop>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FB5C2D"></stop>
+      <stop offset="100%" stop-color="#FB8B27"></stop>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#9D3F8E" stop-opacity="0.12"></stop>
+      <stop offset="70%" stop-color="#9D3F8E" stop-opacity="0"></stop>
+    </radialGradient>
+    <clipPath id="barClip">
+      <rect x="30.5" y="92" width="434" height="12" rx="6" ry="6"></rect>
+    </clipPath>
+  </defs>
+
+  <!-- Base -->
+  <rect x="0" y="0" width="495" height="195" fill="#080C1F"></rect>
+
+  <!-- Subtle magenta orb bottom-left -->
+  <rect x="-200" y="0" width="400" height="300" fill="url(#orb)"></rect>
+
+  <!-- Inner panel -->
+  <rect x="6.5" y="6.5" width="482" height="182" rx="12" ry="12" fill="none" stroke="#FB5C2D" stroke-opacity="0.32" stroke-width="1"></rect>
+
+  <!-- Top accent bar -->
+  <rect x="30.5" y="14.5" width="434" height="2" fill="url(#accentBar)"></rect>
+
+  <!-- Eyebrow -->
+  <text x="30.5" y="44" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="500" letter-spacing="2.2" fill="#B0A4B8">LANGUAGE MIX</text>
+
+  <!-- Title -->
+  <text x="30.5" y="74" font-size="22" font-weight="600" letter-spacing="-0.4" fill="#FFF4E8">Most used languages</text>
+
+  <!-- Stacked bar (clipped to rounded rect) -->
+  <g clip-path="url(#barClip)">
+    <rect x="30.5" y="92" width="215.264" height="12" fill="#4F5D95"></rect>
+    <rect x="245.764" y="92" width="159.278" height="12" fill="#41b883"></rect>
+    <rect x="405.042" y="92" width="18.228" height="12" fill="#F05138"></rect>
+    <rect x="423.270" y="92" width="15.190" height="12" fill="#f1e05a"></rect>
+    <rect x="438.460" y="92" width="13.888" height="12" fill="#f7523f"></rect>
+    <rect x="452.348" y="92" width="6.076" height="12" fill="#c6538c"></rect>
+    <rect x="458.424" y="92" width="6.076" height="12" fill="#6E6378"></rect>
+  </g>
+
+  <!-- Legend: 2 columns, 4 rows left + 3 rows right, row pitch 14, baselines 120/134/148/162 -->
+  <g font-size="12" fill="#FFF4E8">
+    <!-- Left column dots are vertically centered on text baseline-4 -->
+    <!-- PHP -->
+    <circle cx="36.5" cy="116" r="5" fill="#4F5D95"></circle>
+    <text x="48" y="120">PHP</text>
+    <text x="220.5" y="120" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">49.6%</text>
+
+    <!-- Vue -->
+    <circle cx="36.5" cy="130" r="5" fill="#41b883"></circle>
+    <text x="48" y="134">Vue</text>
+    <text x="220.5" y="134" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">36.7%</text>
+
+    <!-- Swift -->
+    <circle cx="36.5" cy="144" r="5" fill="#F05138"></circle>
+    <text x="48" y="148">Swift</text>
+    <text x="220.5" y="148" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">4.2%</text>
+
+    <!-- JavaScript -->
+    <circle cx="36.5" cy="158" r="5" fill="#f1e05a"></circle>
+    <text x="48" y="162">JavaScript</text>
+    <text x="220.5" y="162" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">3.5%</text>
+
+    <!-- Right column -->
+    <!-- Blade -->
+    <circle cx="261.5" cy="116" r="5" fill="#f7523f"></circle>
+    <text x="273" y="120">Blade</text>
+    <text x="445.5" y="120" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">3.2%</text>
+
+    <!-- SCSS -->
+    <circle cx="261.5" cy="130" r="5" fill="#c6538c"></circle>
+    <text x="273" y="134">SCSS</text>
+    <text x="445.5" y="134" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">1.4%</text>
+
+    <!-- Other -->
+    <circle cx="261.5" cy="144" r="5" fill="#6E6378"></circle>
+    <text x="273" y="148">Other</text>
+    <text x="445.5" y="148" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#FB5C2D">1.4%</text>
+  </g>
+
+  <!-- Bottom-right watermark -->
+  <text x="464.5" y="180" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="2" fill="#6E6378">BYTES-WEIGHTED · 5 REPOS</text>
+</svg>

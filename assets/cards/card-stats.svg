@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 195" font-family="'Space Grotesk', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FB8B27"></stop>
+      <stop offset="35%" stop-color="#FB5C2D"></stop>
+      <stop offset="65%" stop-color="#E94961"></stop>
+      <stop offset="100%" stop-color="#9D3F8E"></stop>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FB5C2D"></stop>
+      <stop offset="100%" stop-color="#FB8B27"></stop>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FB8B27" stop-opacity="0.14"></stop>
+      <stop offset="70%" stop-color="#FB8B27" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect x="0" y="0" width="495" height="195" fill="#080C1F"></rect>
+
+  <!-- Subtle sunset orb top-right -->
+  <rect x="295" y="-100" width="400" height="300" fill="url(#orb)"></rect>
+
+  <!-- Inner panel -->
+  <rect x="6.5" y="6.5" width="482" height="182" rx="12" ry="12" fill="none" stroke="#FB5C2D" stroke-opacity="0.32" stroke-width="1"></rect>
+
+  <!-- Top accent bar (24px inset from panel edges) -->
+  <rect x="30.5" y="14.5" width="434" height="2" fill="url(#accentBar)"></rect>
+
+  <!-- Eyebrow -->
+  <text x="30.5" y="44" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="500" letter-spacing="2.2" fill="#B0A4B8">BY THE NUMBERS</text>
+
+  <!-- Title -->
+  <text x="30.5" y="74" font-size="22" font-weight="600" letter-spacing="-0.4" fill="#FFF4E8">Tiago<tspan fill="#FB5C2D">A</tspan>zevedo</text>
+
+  <!-- Stat columns (3 columns of width 144.66, centers at 102.83, 247.5, 392.17) -->
+  <g text-anchor="middle">
+    <!-- Stat 1 -->
+    <text x="102.83" y="135" font-size="36" font-weight="600" letter-spacing="-1" fill="url(#grad)">234</text>
+    <text x="102.83" y="160" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" font-weight="500" letter-spacing="1.8" fill="#B0A4B8">PRs MERGED</text>
+
+    <!-- Stat 2 -->
+    <text x="247.5" y="135" font-size="36" font-weight="600" letter-spacing="-1" fill="url(#grad)">611</text>
+    <text x="247.5" y="160" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" font-weight="500" letter-spacing="1.8" fill="#B0A4B8">CONTRIBUTIONS · 1Y</text>
+
+    <!-- Stat 3 -->
+    <text x="392.17" y="135" font-size="36" font-weight="600" letter-spacing="-1" fill="url(#grad)">5</text>
+    <text x="392.17" y="160" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" font-weight="500" letter-spacing="1.8" fill="#B0A4B8">PUBLIC REPOS</text>
+  </g>
+
+  <!-- Bottom-right watermark -->
+  <text x="464.5" y="180" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="2" fill="#6E6378">ALL-TIME · STATIC SNAPSHOT</text>
+</svg>

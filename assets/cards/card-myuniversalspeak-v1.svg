@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" font-family="'Space Grotesk', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FB8B27"></stop>
+      <stop offset="35%" stop-color="#FB5C2D"></stop>
+      <stop offset="65%" stop-color="#E94961"></stop>
+      <stop offset="100%" stop-color="#9D3F8E"></stop>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FB5C2D"></stop>
+      <stop offset="100%" stop-color="#FB8B27"></stop>
+    </linearGradient>
+    <radialGradient id="orb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#E94961" stop-opacity="0.12"></stop>
+      <stop offset="70%" stop-color="#E94961" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect x="0" y="0" width="400" height="140" fill="#080C1F"></rect>
+
+  <!-- Subtle pink orb top-left -->
+  <rect x="-160" y="-80" width="320" height="220" fill="url(#orb)"></rect>
+
+  <!-- Inner panel -->
+  <rect x="6.5" y="6.5" width="387" height="127" rx="12" ry="12" fill="none" stroke="#FB5C2D" stroke-opacity="0.32" stroke-width="1"></rect>
+
+  <!-- Top accent bar -->
+  <rect x="30.5" y="14.5" width="339" height="2" fill="url(#accentBar)"></rect>
+
+  <!-- Eyebrow -->
+  <text x="30.5" y="42" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" font-weight="500" letter-spacing="1.8" fill="#B0A4B8">04 / FEATURED</text>
+
+  <!-- Title -->
+  <text x="30.5" y="64" font-size="18" font-weight="600" letter-spacing="-0.3" fill="#FFF4E8">myUniversalSpeak-v1</text>
+
+  <!-- Description (2 lines) -->
+  <text x="30.5" y="84" font-size="12" fill="#B0A4B8">Early language-learning experiment — first iteration<tspan x="30.5" dy="16">of a longer-running idea, kept for archival.</tspan></text>
+
+  <!-- Footer -->
+  <g>
+    <circle cx="35.5" cy="120.5" r="4" fill="#4F5D95"></circle>
+    <text x="44" y="124" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" font-weight="500" fill="#FFF4E8">PHP</text>
+
+    <text x="369.5" y="124" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" font-weight="500" letter-spacing="1.5" fill="#FB5C2D">VIEW →</text>
+  </g>
+</svg>
